@@ -6,4 +6,4 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 EXPOSE 5201
 CMD ["-s"]
-ENTRYPOINT ["iperf3]
+ENTRYPOINT ["iperf3"]
