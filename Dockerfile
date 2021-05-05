@@ -5,5 +5,5 @@ RUN apt-get update \
     && apt-get install -y iperf3 \
     && rm -rf /var/lib/apt/lists/*
 EXPOSE 5201
-CMD ["-s"]
 ENTRYPOINT ["iperf3"]
+RUN iperf3 -s
