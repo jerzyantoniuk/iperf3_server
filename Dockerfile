@@ -6,4 +6,4 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 EXPOSE 5201
 ENTRYPOINT ["iperf3"]
-RUN iperf3 -s
+RUN iperf3 
